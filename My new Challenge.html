@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .img{
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+            margin-left:10px;
+            transition: transform 2s;
+            margin-right: 300px;
+            
+        }
+       .img:hover{
+           transform: rotate(360deg);
+       }
+        .main{
+            width: 100%;
+            height: 100px;
+            background-color: cadetblue;
+        }
+        .nav-bar{
+            display: flex;     
+        }
+        .nav-bar h1{
+           color: white;
+           text-shadow: 3px 2px tomato;
+           transition: transform 2s;
+
+        }
+        .nav-bar h1:hover{
+            transform: rotate(360deg);
+        }
+        .anchor{
+            margin-top: 30px;
+            margin-left: 185px;
+            
+        }
+        .anchor a{
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .contact{
+            display: inline;
+            position:relative;
+        }
+        .contact .fe{
+            display:block;
+            margin-left: 180px;
+            margin-top: 10px;
+            width: 100px;
+            height: 110px;
+            background-color: coral;
+            visibility: hidden;
+            position: absolute;
+        }
+        .contact:hover .fe{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav-bar">
+            <img class="img" src="pust logo.jpg">
+            <h1>Shahanur Rahman</h1>
+            <div class="anchor">
+            <a href="#">Home</a>&nbsp;&nbsp;
+            <a href="#">Tutorials</a>&nbsp;&nbsp;
+            <div class="contact">
+            <a href="#">Contact Me</a>
+             <div class="fe">
+                 <a href="#">Facebook</a><br>
+                 <a href="#">Email</a>
+                 <a href="#">Youtube</a>
+                 <a href="#">Yahoo</a>
+             </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
